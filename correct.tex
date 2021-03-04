@@ -1,0 +1,89 @@
+\documentclass[utf8, a4paper,12pt, svgnames, twoside]{book}
+\usepackage{titletoc}
+\usepackage{titlesec}
+\usepackage{ctexcap}
+\usepackage[a4paper, top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{imakeidx}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathrsfs} %数学公式相关 amssymb用于斜体字符，如varnothing,  
+
+
+% 设置字体信息
+\setCJKfamilyfont{puhuiti}{SourceHanSansSC-Light.otf}
+\newcommand{\defaultfont}{\CJKfamily{puhuiti}}
+\defaultfont
+
+\CTEXsetup[format={\Large\bfseries}]{section} % 节左对齐
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\makeindex
+\bibliographystyle{plain}
+
+
+\begin{document}
+\title{\heiti 文本纠错}
+\author{iSchool RUC}
+\date{2019年12月}
+
+\frontmatter
+\maketitle
+
+%\fangsong
+
+\chapter{序}
+
+序内容
+
+
+\chapter{前言}
+
+前言内容
+
+\renewcommand\contentsname{目录}
+\tableofcontents
+
+\mainmatter
+
+\input{chapter/introduction}
+\input{chapter/standard}
+\input{chapter/sample}
+\input{chapter/reference}
+%\begin{multicols}{2}
+%和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集植物\index{调查}和标本采集植物调查和标本采集植物调查和标本采集植物调查和标本采集
+%\end{multicols}
+
+
+\appendix
+
+\chapter{附录部分}
+
+内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容文内容正文内容正文内容正文\index{内容}
+
+内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容附录内容正文内容正文\cite{DK1}.
+
+\renewcommand\indexname{索~~引}
+\printindex
+\addcontentsline{toc}{chapter}{索~引}
+
+\backmatter
+
+\addcontentsline{toc}{chapter}{参考文献}
+
+\begin{thebibliography}{参考文献}
+\bibitem{tiancheng2013} Tiancheng Lou, Jie Tang. Mining Structural Hole Spanners Through Information Diffusion in Social Networks[C]. WWW 2013, May 13–17, 2013, Rio de Janeiro, Brazil.
+
+\end{thebibliography}
+
+\chapter{后~~记}
+
+后记内容
+
+\begin{flushright}
+作~~者~~~~~~~~~
+
+2019年12月~~~~~
+\end{flushright}
+
+\end{document}
